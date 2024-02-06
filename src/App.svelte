@@ -1,39 +1,26 @@
 <script lang="ts">
-    import Item from './subscription.svelte'
+    import SubscriptionList from './subscriptionList.svelte'
+
+    let myComponent = false;
+    let componentTitle = '';
+    switch (componentTitle) {
+        case '':
+            myComponent = false;
+            break;
+        default:
+            myComponent = true;
+            break;
+    }
 </script>
 
 <main>
     <div class="header">
 <!--todo: add logo-->
-        <img src="vite.svg">
+        <img src="/public/vite.svg">
         <h1>Subscriptions</h1>
     </div>
     <div class="body">
-        <Item
-                title="Example Title"
-                description="Example Description"
-                cost="50"
-                logo="vite.svg"
-        />
-        <Item
-                title="Example Title"
-                description="Example Description"
-                cost="50"
-                logo="vite.svg"
-        />
-        <Item
-                title="Example Title"
-                description="Example Description"
-                cost="50"
-                logo="vite.svg"
-        />
-
-        <Item
-                title="Example Title"
-                description="Example Description"
-                cost="50"
-                logo="vite.svg"
-        />
+        <SubscriptionList />
 
 
 

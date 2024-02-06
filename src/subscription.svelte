@@ -1,17 +1,18 @@
 <script lang="ts">
-	import { navigate } from 'svelte-routing';
 
 	export let title: string;
 	export let description: string;
 	export let cost: string;
-	export let logo: string;
+	export let logo: string
 
 	function handleClick() {
-		navigate(`/item/${encodeURIComponent(title)}`);
+
 	}
+
+
 </script>
 
-<div class="item" on:click={handleClick}>
+<div class="subscription" on:click={handleClick}>
     <img src={logo} alt="Logo" class="logo">
     <div class="details">
         <h2 class="title">{title}</h2>
@@ -21,7 +22,7 @@
 </div>
 
 <style>
-    .item {
+    .subscription {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
