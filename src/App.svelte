@@ -4,7 +4,8 @@
 
 <main>
     <div class="header">
-        <img src="vite.svg"> //todo: add logo
+<!--todo: add logo-->
+        <img src="vite.svg">
         <h1>Subscriptions</h1>
     </div>
     <div class="body">

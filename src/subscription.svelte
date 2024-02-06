@@ -1,11 +1,17 @@
-<script>
-	export let title;
-	export let description;
-	export let cost;
-	export let logo;
+<script lang="ts">
+	import { navigate } from 'svelte-routing';
+
+	export let title: string;
+	export let description: string;
+	export let cost: string;
+	export let logo: string;
+
+	function handleClick() {
+		navigate(`/item/${encodeURIComponent(title)}`);
+	}
 </script>
 
-<div class="item">
+<div class="item" on:click={handleClick}>
     <img src={logo} alt="Logo" class="logo">
     <div class="details">
         <h2 class="title">{title}</h2>
