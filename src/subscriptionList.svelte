@@ -2,16 +2,6 @@
 
     import Subscription from "./subscription.svelte";
 
-    export let title: string;
-    export let description: string;
-    export let cost: string;
-    export let logo: string
-
-    function handleClick() {
-
-    }
-
-
 </script>
 
 <div class="subscriptionList">

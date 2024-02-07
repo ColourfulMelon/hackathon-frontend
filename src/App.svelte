@@ -11,16 +11,26 @@
             myComponent = true;
             break;
     }
+
+
+
 </script>
 
 <main>
     <div class="header">
 <!--todo: add logo-->
-        <img src="/public/vite.svg">
-        <h1>Subscriptions</h1>
+        <div class="logo-div">
+            <img src="/public/vite.svg">
+            <h1>Subscriptions</h1>
+        </div>
+        <div class="auth">
+            <button id="login-button"> <img id="login" src="/public/IC_logo.png" width="50px"><p id="login">Login</p></button>
+<!--            <p id="principal"></p>-->
+        </div>
     </div>
     <div class="body">
         <SubscriptionList />
+
 
 
 
@@ -42,6 +52,33 @@
 
 .header {
     display: flex;
+    justify-content: space-between;
+    /*width: 100vw;*/
+    align-items: center;
+}
+
+.logo-div {
+    display: flex;
     justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 50vw;
+}
+
+#login {
+    color: #000000;
+
+}
+
+#login-button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
 }
 </style>
